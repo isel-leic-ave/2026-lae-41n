@@ -1,9 +1,9 @@
 * Github Classroom for Labs and Project submission:
-  * Individual 41n - https://classroom.github.com/classrooms/5501606-lae-2026-41n
-* [Slack](https://isel-leic-lae.slack.com) - Use your ISEL email address (e.g. a87956@alunos.isel.pt) and join the channel of your classroom (e.g. #2026-leic-41n-falcao)
-* [Lessons](./wiki/lessons)
-* [Evaluation _em português_](./wiki/evaluation)
-* [Bibliography and Tools](./wiki/bibliography)
+  * Individual 41n - https://classroom.github.com/a/EugpDcuZ
+* [Slack](https://join.slack.com/t/isel-leic-lae/shared_invite/zt-3qrppkned-c2VFCgQIapZLGUBFlcXzjg) - Use your ISEL email address (e.g. a87956@alunos.isel.pt) and join the channel of your classroom (e.g. #2026-leic-43d-falcao)
+* [Lessons](../../wiki/Lessons)
+* [Evaluation _em português_](../../wiki/Evaluation)
+* [Bibliography and Tools](../../wiki/Bibliography)
 
 
 <table width="100%">
