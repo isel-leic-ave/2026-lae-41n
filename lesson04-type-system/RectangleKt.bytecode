@@ -1,0 +1,6 @@
+Compiled from "Rectangle.kt"
+public final class RectangleKt {
+  public static final void printWidth(Rectangle);
+  public static final void main();
+  public static void main(java.lang.String[]);
+}

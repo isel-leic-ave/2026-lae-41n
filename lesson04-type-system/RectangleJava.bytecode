@@ -1,0 +1,9 @@
+Compiled from "RectangleJava.java"
+class RectangleJava {
+  private final int height;
+  private int width;
+  public RectangleJava(int, int);
+  public int getHeight();
+  public int getWidth();
+  public void setWidth(int);
+}
