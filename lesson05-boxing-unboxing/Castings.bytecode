@@ -1,0 +1,215 @@
+Classfile /Users/luisfalcao/Cloud Drives/NAS-LF/ISEL/Disciplinas/2025_2026/2025-2026VerLAE/Repositories/2026-lae-41n-LF/lesson05-boxing-unboxing/CastingsKt.class
+  Last modified Mar 6, 2026; size 1452 bytes
+  SHA-256 checksum dfbf425f14087e3269e4d34c18cba3e8b73be886135492046391a1b58542d5a8
+  Compiled from "Castings.kt"
+public final class CastingsKt
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // CastingsKt
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 4, attributes: 2
+Constant pool:
+   #1 = Utf8               CastingsKt
+   #2 = Class              #1             // CastingsKt
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               foo
+   #6 = Utf8               (LA;)V
+   #7 = Utf8               Lorg/jetbrains/annotations/NotNull;
+   #8 = Utf8               a
+   #9 = String             #8             // a
+  #10 = Utf8               kotlin/jvm/internal/Intrinsics
+  #11 = Class              #10            // kotlin/jvm/internal/Intrinsics
+  #12 = Utf8               checkNotNullParameter
+  #13 = Utf8               (Ljava/lang/Object;Ljava/lang/String;)V
+  #14 = NameAndType        #12:#13        // checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+  #15 = Methodref          #11.#14        // kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+  #16 = Utf8               B
+  #17 = Class              #16            // B
+  #18 = Utf8               o
+  #19 = Utf8               Ljava/lang/Object;
+  #20 = Utf8               b
+  #21 = Utf8               LB;
+  #22 = Utf8               LA;
+  #23 = Utf8               main
+  #24 = Utf8               ()V
+  #25 = Utf8               f
+  #26 = Utf8               (II)I
+  #27 = NameAndType        #25:#26        // f:(II)I
+  #28 = Methodref          #2.#27         // CastingsKt.f:(II)I
+  #29 = Utf8               Test an object B
+  #30 = String             #29            // Test an object B
+  #31 = Utf8               java/lang/System
+  #32 = Class              #31            // java/lang/System
+  #33 = Utf8               out
+  #34 = Utf8               Ljava/io/PrintStream;
+  #35 = NameAndType        #33:#34        // out:Ljava/io/PrintStream;
+  #36 = Fieldref           #32.#35        // java/lang/System.out:Ljava/io/PrintStream;
+  #37 = Utf8               java/io/PrintStream
+  #38 = Class              #37            // java/io/PrintStream
+  #39 = Utf8               println
+  #40 = Utf8               (Ljava/lang/Object;)V
+  #41 = NameAndType        #39:#40        // println:(Ljava/lang/Object;)V
+  #42 = Methodref          #38.#41        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #43 = Utf8               <init>
+  #44 = NameAndType        #43:#24        // "<init>":()V
+  #45 = Methodref          #17.#44        // B."<init>":()V
+  #46 = Utf8               A
+  #47 = Class              #46            // A
+  #48 = NameAndType        #5:#6          // foo:(LA;)V
+  #49 = Methodref          #2.#48         // CastingsKt.foo:(LA;)V
+  #50 = Utf8               kotlin/io/ConsoleKt
+  #51 = Class              #50            // kotlin/io/ConsoleKt
+  #52 = Utf8               readLine
+  #53 = Utf8               ()Ljava/lang/String;
+  #54 = NameAndType        #52:#53        // readLine:()Ljava/lang/String;
+  #55 = Methodref          #51.#54        // kotlin/io/ConsoleKt.readLine:()Ljava/lang/String;
+  #56 = Utf8               Test an object A
+  #57 = String             #56            // Test an object A
+  #58 = Utf8               D
+  #59 = Class              #58            // D
+  #60 = Methodref          #59.#44        // D."<init>":()V
+  #61 = Utf8               x
+  #62 = Utf8               I
+  #63 = Utf8               y
+  #64 = Utf8               z
+  #65 = Utf8               ([Ljava/lang/String;)V
+  #66 = NameAndType        #23:#24        // main:()V
+  #67 = Methodref          #2.#66         // CastingsKt.main:()V
+  #68 = Utf8               args
+  #69 = Utf8               [Ljava/lang/String;
+  #70 = Utf8               Lkotlin/Metadata;
+  #71 = Utf8               mv
+  #72 = Integer            2
+  #73 = Integer            0
+  #74 = Utf8               k
+  #75 = Utf8               xi
+  #76 = Integer            48
+  #77 = Utf8               d1
+  #78 = Utf8               \u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003\u001a\u0006\u0010\u0004\u001a\u00020\u0001\u001a\u0016\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\u0006
+  #79 = Utf8               d2
+  #80 = Utf8
+  #81 = Utf8               Castings.kt
+  #82 = Utf8               Code
+  #83 = Utf8               LineNumberTable
+  #84 = Utf8               LocalVariableTable
+  #85 = Utf8               RuntimeInvisibleParameterAnnotations
+  #86 = Utf8               SourceFile
+  #87 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final void foo(A);
+    descriptor: (LA;)V
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=2, locals=3, args_size=1
+         0: aload_0
+         1: ldc           #9                  // String a
+         3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+         6: aload_0
+         7: astore_1
+         8: aload_0
+         9: checkcast     #17                 // class B
+        12: astore_2
+        13: return
+      LineNumberTable:
+        line 13: 6
+        line 14: 8
+        line 15: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            8       6     1     o   Ljava/lang/Object;
+           13       1     2     b   LB;
+            0      14     0     a   LA;
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #7()
+          org.jetbrains.annotations.NotNull
+
+  public static final void main();
+    descriptor: ()V
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=2, locals=3, args_size=0
+         0: iconst_2
+         1: istore_0
+         2: iconst_3
+         3: istore_1
+         4: iload_0
+         5: iload_1
+         6: invokestatic  #28                 // Method f:(II)I
+         9: istore_2
+        10: ldc           #30                 // String Test an object B
+        12: getstatic     #36                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        15: swap
+        16: invokevirtual #42                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        19: new           #17                 // class B
+        22: dup
+        23: invokespecial #45                 // Method B."<init>":()V
+        26: checkcast     #47                 // class A
+        29: invokestatic  #49                 // Method foo:(LA;)V
+        32: invokestatic  #55                 // Method kotlin/io/ConsoleKt.readLine:()Ljava/lang/String;
+        35: pop
+        36: ldc           #57                 // String Test an object A
+        38: getstatic     #36                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        41: swap
+        42: invokevirtual #42                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        45: new           #59                 // class D
+        48: dup
+        49: invokespecial #60                 // Method D."<init>":()V
+        52: checkcast     #47                 // class A
+        55: invokestatic  #49                 // Method foo:(LA;)V
+        58: return
+      LineNumberTable:
+        line 18: 0
+        line 19: 2
+        line 21: 4
+        line 23: 10
+        line 24: 19
+        line 25: 32
+        line 26: 36
+        line 27: 45
+        line 28: 58
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      57     0     x   I
+            4      55     1     y   I
+           10      49     2     z   I
+
+  public static final int f(int, int);
+    descriptor: (II)I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: iadd
+         3: ireturn
+      LineNumberTable:
+        line 32: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     x   I
+            0       4     1     y   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x1009) ACC_PUBLIC, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: invokestatic  #67                 // Method main:()V
+         3: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  args   [Ljava/lang/String;
+}
+SourceFile: "Castings.kt"
+RuntimeVisibleAnnotations:
+  0: #70(#71=[I#72,I#72,I#73],#74=I#72,#75=I#76,#77=[s#78],#79=[s#5,s#80,s#8,s#22,s#23,s#25,s#80,s#61,s#63])
+    kotlin.Metadata(
+      mv=[2,2,0]
+      k=2
+      xi=48
+      d1=["\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003\u001a\u0006\u0010\u0004\u001a\u00020\u0001\u001a\u0016\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\u0006"]
+      d2=["foo","","a","LA;","main","f","","x","y"]
+    )
