@@ -1,0 +1,58 @@
+Compiled from "TypeErasure.kt"
+public final class TypeErasureKt {
+  public static final void main();
+    Code:
+       0: iconst_1
+       1: anewarray     #8                  // class Student
+       4: astore_1
+       5: aload_1
+       6: iconst_0
+       7: new           #8                  // class Student
+      10: dup
+      11: ldc           #9                  // int 183764
+      13: ldc           #11                 // String Maria
+      15: invokespecial #15                 // Method Student."<init>":(ILjava/lang/String;)V
+      18: aastore
+      19: aload_1
+      20: invokestatic  #21                 // Method kotlin/collections/CollectionsKt.mutableListOf:([Ljava/lang/Object;)Ljava/util/List;
+      23: astore_0
+      24: aload_0
+      25: ldc           #23                 // String null cannot be cast to non-null type kotlin.collections.MutableList<kotlin.Any>
+      27: invokestatic  #29                 // Method kotlin/jvm/internal/Intrinsics.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      30: aload_0
+      31: invokestatic  #35                 // Method kotlin/jvm/internal/TypeIntrinsics.asMutableList:(Ljava/lang/Object;)Ljava/util/List;
+      34: astore_1
+      35: aload_1
+      36: ldc           #37                 // String ola
+      38: invokeinterface #43,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      43: pop
+      44: aload_1
+      45: iconst_1
+      46: invokeinterface #47,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      51: astore_2
+      52: aload_0
+      53: iconst_1
+      54: invokeinterface #47,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      59: checkcast     #8                  // class Student
+      62: astore_3
+      63: aload_1
+      64: iconst_1
+      65: invokeinterface #47,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      70: getstatic     #53                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      73: swap
+      74: invokevirtual #59                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+      77: aload_0
+      78: iconst_1
+      79: invokeinterface #47,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      84: checkcast     #8                  // class Student
+      87: invokevirtual #63                 // Method Student.getName:()Ljava/lang/String;
+      90: getstatic     #53                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      93: swap
+      94: invokevirtual #59                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+      97: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #73                 // Method main:()V
+       3: return
+}

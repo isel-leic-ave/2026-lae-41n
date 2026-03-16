@@ -1,0 +1,202 @@
+Classfile /Users/luisfalcao/Cloud Drives/NAS-LF/ISEL/Disciplinas/2025_2026/2025-2026VerLAE/Repositories/2026-lae-41n-LF/lesson06-type-system/ExerciseKt.class
+  Last modified Mar 9, 2026; size 1508 bytes
+  SHA-256 checksum 5cb044be37617245a266b9c20c635d0436365cd5626986adadd45cb204095321
+  Compiled from "Exercise.kt"
+public final class ExerciseKt
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // ExerciseKt
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 2
+Constant pool:
+   #1 = Utf8               ExerciseKt
+   #2 = Class              #1             // ExerciseKt
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               cold
+   #6 = Utf8               (Ljava/util/List;Ljava/lang/Object;)D
+   #7 = Utf8               (Ljava/util/List<Ljava/lang/Double;>;Ljava/lang/Object;)D
+   #8 = Utf8               Lorg/jetbrains/annotations/NotNull;
+   #9 = Utf8               a
+  #10 = String             #9             // a
+  #11 = Utf8               kotlin/jvm/internal/Intrinsics
+  #12 = Class              #11            // kotlin/jvm/internal/Intrinsics
+  #13 = Utf8               checkNotNullParameter
+  #14 = Utf8               (Ljava/lang/Object;Ljava/lang/String;)V
+  #15 = NameAndType        #13:#14        // checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+  #16 = Methodref          #12.#15        // kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+  #17 = Utf8               b
+  #18 = String             #17            // b
+  #19 = Utf8               kotlin/collections/CollectionsKt
+  #20 = Class              #19            // kotlin/collections/CollectionsKt
+  #21 = Utf8               first
+  #22 = Utf8               (Ljava/util/List;)Ljava/lang/Object;
+  #23 = NameAndType        #21:#22        // first:(Ljava/util/List;)Ljava/lang/Object;
+  #24 = Methodref          #20.#23        // kotlin/collections/CollectionsKt.first:(Ljava/util/List;)Ljava/lang/Object;
+  #25 = Utf8               java/lang/Double
+  #26 = Class              #25            // java/lang/Double
+  #27 = Utf8               valueOf
+  #28 = Utf8               (D)Ljava/lang/Double;
+  #29 = NameAndType        #27:#28        // valueOf:(D)Ljava/lang/Double;
+  #30 = Methodref          #26.#29        // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+  #31 = Utf8               doubleValue
+  #32 = Utf8               ()D
+  #33 = NameAndType        #31:#32        // doubleValue:()D
+  #34 = Methodref          #26.#33        // java/lang/Double.doubleValue:()D
+  #35 = Utf8               p
+  #36 = Utf8               I
+  #37 = Utf8               q
+  #38 = Utf8               Ljava/lang/Double;
+  #39 = Utf8               Ljava/util/List;
+  #40 = Utf8               Ljava/lang/Object;
+  #41 = Utf8               main
+  #42 = Utf8               ()V
+  #43 = Double             2.0d
+  #45 = Double             2.1d
+  #47 = Double             2.2d
+  #49 = Utf8               listOf
+  #50 = Utf8               ([Ljava/lang/Object;)Ljava/util/List;
+  #51 = NameAndType        #49:#50        // listOf:([Ljava/lang/Object;)Ljava/util/List;
+  #52 = Methodref          #20.#51        // kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+  #53 = NameAndType        #5:#6          // cold:(Ljava/util/List;Ljava/lang/Object;)D
+  #54 = Methodref          #2.#53         // ExerciseKt.cold:(Ljava/util/List;Ljava/lang/Object;)D
+  #55 = Utf8               d
+  #56 = Utf8               D
+  #57 = Utf8               ([Ljava/lang/String;)V
+  #58 = NameAndType        #41:#42        // main:()V
+  #59 = Methodref          #2.#58         // ExerciseKt.main:()V
+  #60 = Utf8               args
+  #61 = Utf8               [Ljava/lang/String;
+  #62 = Utf8               Lkotlin/Metadata;
+  #63 = Utf8               mv
+  #64 = Integer            2
+  #65 = Integer            0
+  #66 = Utf8               k
+  #67 = Utf8               xi
+  #68 = Integer            48
+  #69 = Utf8               d1
+  #70 = Utf8               \u0000\u0018\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\u001a\u001e\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u0005\u001a\u0006\u0010\u0006\u001a\u00020\u0007
+  #71 = Utf8               d2
+  #72 = Utf8
+  #73 = Utf8               Exercise.kt
+  #74 = Utf8               Code
+  #75 = Utf8               StackMapTable
+  #76 = Utf8               LineNumberTable
+  #77 = Utf8               LocalVariableTable
+  #78 = Utf8               Signature
+  #79 = Utf8               RuntimeInvisibleParameterAnnotations
+  #80 = Utf8               SourceFile
+  #81 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final double cold(java.util.List<java.lang.Double>, java.lang.Object);
+    descriptor: (Ljava/util/List;Ljava/lang/Object;)D
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=4, locals=4, args_size=2
+         0: aload_0
+         1: ldc           #10                 // String a
+         3: invokestatic  #16                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+         6: aload_1
+         7: ldc           #18                 // String b
+         9: invokestatic  #16                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+        12: sipush        1234
+        15: istore_2
+        16: aload_0
+        17: invokestatic  #24                 // Method kotlin/collections/CollectionsKt.first:(Ljava/util/List;)Ljava/lang/Object;
+        20: checkcast     #26                 // class java/lang/Double
+        23: astore_3
+        24: aload_3
+        25: ifnonnull     34
+        28: iload_2
+        29: i2d
+        30: invokestatic  #30                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        33: astore_3
+        34: aload_3
+        35: invokevirtual #34                 // Method java/lang/Double.doubleValue:()D
+        38: aload_1
+        39: checkcast     #26                 // class java/lang/Double
+        42: invokevirtual #34                 // Method java/lang/Double.doubleValue:()D
+        45: dadd
+        46: dreturn
+      StackMapTable: number_of_entries = 1
+        frame_type = 253 /* append */
+          offset_delta = 34
+          locals = [ int, class java/lang/Double ]
+      LineNumberTable:
+        line 5: 12
+        line 6: 16
+        line 7: 24
+        line 8: 28
+        line 10: 34
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           16      31     2     p   I
+           24      23     3     q   Ljava/lang/Double;
+            0      47     0     a   Ljava/util/List;
+            0      47     1     b   Ljava/lang/Object;
+    Signature: #7                           // (Ljava/util/List<Ljava/lang/Double;>;Ljava/lang/Object;)D
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #8()
+          org.jetbrains.annotations.NotNull
+      parameter 1:
+        0: #8()
+          org.jetbrains.annotations.NotNull
+
+  public static final void main();
+    descriptor: ()V
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=4, locals=3, args_size=0
+         0: ldc2_w        #43                 // double 2.0d
+         3: dstore_0
+         4: iconst_2
+         5: anewarray     #26                 // class java/lang/Double
+         8: astore_2
+         9: aload_2
+        10: iconst_0
+        11: ldc2_w        #45                 // double 2.1d
+        14: invokestatic  #30                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        17: aastore
+        18: aload_2
+        19: iconst_1
+        20: ldc2_w        #47                 // double 2.2d
+        23: invokestatic  #30                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        26: aastore
+        27: aload_2
+        28: invokestatic  #52                 // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+        31: dload_0
+        32: invokestatic  #30                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        35: invokestatic  #54                 // Method cold:(Ljava/util/List;Ljava/lang/Object;)D
+        38: pop2
+        39: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 4
+        line 16: 39
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4      36     0     d   D
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x1009) ACC_PUBLIC, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: invokestatic  #59                 // Method main:()V
+         3: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  args   [Ljava/lang/String;
+}
+SourceFile: "Exercise.kt"
+RuntimeVisibleAnnotations:
+  0: #62(#63=[I#64,I#64,I#65],#66=I#64,#67=I#68,#69=[s#70],#71=[s#5,s#72,s#9,s#72,s#17,s#72,s#41,s#72])
+    kotlin.Metadata(
+      mv=[2,2,0]
+      k=2
+      xi=48
+      d1=["\u0000\u0018\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\u001a\u001e\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u0005\u001a\u0006\u0010\u0006\u001a\u00020\u0007"]
+      d2=["cold","","a","","b","","main",""]
+    )
