@@ -14,3 +14,5 @@ rootProject.name = "lae41n"
 include("lesson08-reflect:reflect-java")
 include("lesson09-reflect-kotlin")
 include("lesson10-annotations")
+include("lesson11-reflection-generics")
+include("lesson13&14-JMH-microbench-mapper")
