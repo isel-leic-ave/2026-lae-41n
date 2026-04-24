@@ -16,3 +16,5 @@ include("lesson09-reflect-kotlin")
 include("lesson10-annotations")
 include("lesson11-reflection-generics")
 include("lesson13&14-JMH-microbench-mapper")
+include("lesson15-bytecode")
+
