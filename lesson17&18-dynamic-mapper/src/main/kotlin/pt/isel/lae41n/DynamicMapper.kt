@@ -3,7 +3,7 @@ package pt.isel.lae41n
 import java.io.File
 import java.lang.classfile.ClassFile
 import java.lang.classfile.ClassFile.ACC_PUBLIC
-import java.lang.classfile.Interfaces
+import java.lang.classfile.CodeBuilder
 import java.lang.constant.ClassDesc
 import java.lang.constant.ConstantDescs.CD_Object
 import java.lang.constant.ConstantDescs.CD_boolean
@@ -52,7 +52,7 @@ fun <T : Any, R : Any> loadDynamicMapper(
     srcType: Class<T>,
     destType: Class<R>,
 ) = mappers.getOrPut(srcType to destType) {
-    buildMapper(srcType.kotlin, destType.kotlin)
+    buildMapper(srcType.kotlin, destType.kotlin,)
         .createInstance() as Mapper<*, *>
 } as Mapper<T, R>
 
@@ -112,10 +112,14 @@ private fun <T : Any, R : Any> buildMapper(
             ClassDesc.of(dest.qualifiedName),
             ClassDesc.of(src.qualifiedName),
         )
+
+    val baseMapperDesc = ClassDesc.of(BaseMapper::class.qualifiedName)
+
+
     val bytes: ByteArray =
         ClassFile.of().build(ClassDesc.of(className)) { clb ->
             clb
-                .withInterfaces(Interfaces.ofSymbols(mapper).interfaces())
+                .withSuperclass(baseMapperDesc)
                 //   public pt.isel.PersonDto2Person();
                 //    Code:
                 //         0: aload_0
@@ -125,7 +129,7 @@ private fun <T : Any, R : Any> buildMapper(
                     mb.withCode { cob ->
                         cob
                             .aload(0)
-                            .invokespecial(CD_Object, INIT_NAME, MTD_void)
+                            .invokespecial(baseMapperDesc, INIT_NAME, MTD_void)
                             .return_()
                     }
                 }
@@ -147,14 +151,8 @@ private fun <T : Any, R : Any> buildMapper(
                         cob
                             .new_(ClassDesc.of(dest.qualifiedName))
                             .dup()
-                        params.forEach { (srcProp, _) ->
-                            cob
-                                .aload(1)
-                                .invokevirtual(
-                                    ClassDesc.of(src.qualifiedName),
-                                    srcProp.javaGetter?.name,
-                                    MethodTypeDesc.of(srcProp.returnType.descriptor()),
-                                )
+                        params.forEach { (srcProp, dstParam) ->
+                            generateParameterValue(src, cob, srcProp, dstParam)
                         }
                         cob.invokespecial(
                             dest.descriptor(),
@@ -195,6 +193,37 @@ private fun <T : Any, R : Any> buildMapper(
         .loadClass(className)
         .kotlin
 }
+
+fun generateSimpleValue(src: KClass<*>, cob: CodeBuilder, srcProp: KProperty<*>, dstParam: KParameter) {
+    cob
+        .aload(1)
+        .invokevirtual(
+            ClassDesc.of(src.qualifiedName),
+            srcProp.javaGetter?.name,
+            MethodTypeDesc.of(srcProp.returnType.descriptor()),
+        )
+}
+
+fun generateMappedValue(src: KClass<*>, cob: CodeBuilder, srcProp: KProperty<*>, dstParam: KParameter) {
+    val propType = srcProp.returnType.classifier as KClass<*>
+    val paramType = dstParam.type.classifier as KClass<*>
+
+    cob
+        .aload(1)
+        .invokevirtual(
+            ClassDesc.of(src.qualifiedName),
+            srcProp.javaGetter?.name,
+            MethodTypeDesc.of(srcProp.returnType.descriptor()),
+        )
+}
+fun generateParameterValue(src: KClass<*>, cob: CodeBuilder, srcProp: KProperty<*>, dstParam: KParameter) {
+    if(srcProp.returnType == dstParam.type)
+        generateSimpleValue(src, cob, srcProp, dstParam)
+    else generateMappedValue(src, cob, srcProp, dstParam)
+
+
+}
+
 
 private fun match(
     srcProp: KProperty<*>,

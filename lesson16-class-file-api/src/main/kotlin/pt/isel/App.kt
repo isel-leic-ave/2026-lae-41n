@@ -2,23 +2,13 @@ package pt.isel
 
 import java.io.File
 import java.lang.classfile.ClassFile
-import java.lang.classfile.ClassFile.ACC_FINAL
-import java.lang.classfile.ClassFile.ACC_PRIVATE
-import java.lang.classfile.ClassFile.ACC_PUBLIC
-import java.lang.classfile.Interfaces
+import java.lang.classfile.ClassFile.*
 import java.lang.classfile.Interfaces.ofSymbols
 import java.lang.constant.ClassDesc
-import java.lang.constant.ConstantDescs.CD_Object
-import java.lang.constant.ConstantDescs.CD_int
-import java.lang.constant.ConstantDescs.CD_void
-import java.lang.constant.ConstantDescs.INIT_NAME
-import java.lang.constant.ConstantDescs.MTD_void
+import java.lang.constant.ConstantDescs.*
 import java.lang.constant.MethodTypeDesc
 import kotlin.reflect.KClass
 import kotlin.reflect.full.createInstance
-import kotlin.reflect.full.declaredFunctions
-import kotlin.reflect.full.declaredMemberProperties
-import kotlin.reflect.jvm.isAccessible
 
 /*
  public final class pt.isel.Bar {
